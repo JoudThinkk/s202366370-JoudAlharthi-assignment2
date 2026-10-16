@@ -1,16 +1,65 @@
-# Personal Portfolio Website
+# Personal Portfolio Website - Assignment 2
 
-## Overview
-This is a personal portfolio website built as part of the web development assignment. The website features a responsive layout using CSS Flexbox and Grid, along with a JavaScript-powered dark/light mode toggle.
+##  Project Overview
+This repository contains the second iteration of my personal portfolio website, developed as part of **Assignment 2**. Building upon the static layout of Assignment 1, this version introduces advanced **interactivity, client-side data handling, persistent storage, form validation, and modern user experience (UX) enhancements** built entirely with vanilla JavaScript and modern CSS.
 
-## Features
-- **Responsive Design:** Optimized for desktop, tablet, and mobile screens.
-- **Interactive UI:** Dynamic dark/light mode switcher powered by vanilla JavaScript.
-- **Modern Styling:** Clean layout built using CSS Flexbox & Grid without heavy frameworks.
+---
 
-## Project Structure
+##  Key Features & Technical Implementation
+
+### 1. Dynamic Content & Theme Switcher
+- Implemented a dynamic **Dark/Light Mode** toggle button.
+- Dynamically updates UI elements, background colors, card styles, and text colors based on the selected mode.
+- Updates the button text and icon dynamically (`🌙 Dark Mode` / `☀️ Light Mode`).
+
+### 2. Client Side Data Handling (`localStorage`)
+- Integrated browser **`localStorage`** to remember the user's preferred theme.
+- When a user revisits or reloads the page, their last chosen theme (Dark or Light) is automatically retrieved and applied, preventing preference reset.
+
+### 3. Interactive Contact Form & Form Validation
+- Developed an interactive contact form with real time field validation (Name, Email, and Message).
+- Includes error checking logic to ensure no required fields are left blank.
+- Validates email input formats to ensure they contain proper structure (including `@` and `.`).
+
+### 4. Modern User Feedback (Custom Toast Notifications)
+- Replaced standard static text alerts with a dynamic **floating Toast Notification system**.
+- Delivers clear, animated feedback to users (*what happened and what to do next*):
+  - **Success Toasts:** Green notifications confirming successful form submissions with personalized greetings.
+  - **Error Toasts:** Red notifications guiding users to fix empty fields or incorrect email formats.
+  - Automatically fades out after 4 seconds for a clean UI experience.
+
+### 5. Animations & Smooth Transitions
+- Added smooth fade in entrance animations across sections upon page load.
+- Implemented interactive hover effects (`transform: translateY`) on project cards for an engaging user experience.
+
+---
+
+## 🛠️ Technologies Used
+- **HTML5:** Utilized semantic elements for clean and accessible page structuring, including:
+  - `<header>` / Navigation structure
+  - `<section>` (for partitioning major content blocks like About, Projects, and Contact)
+  - `<div>` (for flexible layouts, grids, and container wrappers)
+  - `<h2>` and `<h3>` (for hierarchical headings)
+  - `<p>` (for text descriptions and taglines)
+  - `<img>` (for displaying project and profile image assets)
+  - `<form>`, `<label>`, `<input>` (text and email), `<textarea>`, and `<button>` (for the interactive contact section)
+- **CSS3:** Advanced styling utilizing:
+  - **CSS Flexbox** (for the About section alignment and layout responsiveness)
+  - **CSS Grid** (for the structured projects layout)
+  - Media queries and responsive design techniques
+  - Custom CSS classes and state styling for the Dark/Light Mode theme and Toast notifications
+- **JavaScript (ES6+):** Client side programming handling:
+  - DOM manipulation and event listeners
+  - Browser **`localStorage`** API for persistent theme preference storage
+  - Form validation logic and input verification
+  - Dynamic UI generation (floating Toast notification system with custom success/error feedback states)
+  - Smooth entrance animations and page transitions
+
+---
+
+## 📁 Project Directory Structure
 ```text
-assignment-1/
+assignment-2/
 ├── README.md
 ├── index.html
 ├── css/
@@ -26,10 +75,57 @@ assignment-1/
     └── technical-documentation.md
 ```
 
-## How to Run Locally
-1. Download or clone the project files to your computer.
-2. Ensure all files (`index.html`, and the `css`, `js`, and `images` folders) are in their respective directories.
-3. Double-click `index.html` or open it using any web browser.
+## ⚙️ How to Run Locally
 
-## AI Usage Summary
-AI tools were used for initial structural guidance and code generation. All codes, styling choices, and layouts were manually reviewed, tested, and adjusted to meet personal preferences and assignment requirements. For more details, check the [AI Usage Report](docs/ai-usage-report.md).
+To run and test this project locally on your machine, follow these detailed steps:
+
+### Prerequisites
+- A modern web browser (Google Chrome, Mozilla Firefox, Safari, or Microsoft Edge).
+- A code editor (such as **Visual Studio Code**, which is recommended).
+
+### Step-by-Step Instructions
+1. **Clone or Download the Repository:**
+   - If using Git, open your terminal and run:
+     ```bash
+     git clone <repository-url>
+     ```
+   - Alternatively, download the project ZIP folder from GitHub and extract it to your preferred directory.
+
+2. **Verify Folder Structure:**
+   - Ensure that all files and folders are correctly placed in the root directory as shown below:
+     ```text
+     assignment-2/
+     ├── index.html
+     ├── css/styles.css
+     ├── js/script.js
+     ├── images/ (containing project assets)
+     └── docs/ (containing documentation reports)
+     ```
+
+3. **Open the Project:**
+   - Open **Visual Studio Code**, click on `File > Open Folder`, and select the extracted `assignment-2` folder.
+
+4. **Launch the Website:**
+   - **Method 1 (Quick Open):** Navigate to the project folder, locate the `index.html` file, and double-click it to open it directly in your default web browser.
+   - **Method 2 (Recommended - Live Server):** If you are using VS Code, install the **Live Server** extension. Right-click on `index.html` and select **"Open with Live Server"** to view the live webpage with automatic reloading capabilities.
+
+
+##  AI Usage Summary
+
+During the development of **Assignment 2**, Artificial Intelligence tools (such as Gemini and ChatGPT) were utilized responsibly and transparently as a collaborative assistant to enhance the learning and development process. 
+
+### How AI Was Utilized:
+1. **Brainstorming & Logic Design:** 
+   - Assisted in conceptualizing the JavaScript logic for dynamic floating toast notifications (`showToast` function) and robust form validation rules.
+   - Discussed approaches for integrating browser `localStorage` to securely store and retrieve the user's preferred theme.
+2. **Code Structure & Refinement:** 
+   - Guided the restructuring of event listeners and DOM manipulation methods to ensure clean, modular, and maintainable JavaScript code.
+   - Helped troubleshoot styling conflicts between light and dark modes in CSS.
+3. **Documentation:** 
+   - Assisted in organizing and drafting clear technical explanations for the project structure and local setup instructions.
+
+### Student Role & Academic Integrity:
+- **Manual Review & Adaptation:** Every piece of code suggested by AI tools was thoroughly reviewed, tested, and manually adapted to match my personal design choices, project architecture, and exact assignment requirements.
+- **Understanding:** I fully understand all implemented features and lines of code within this repository. 
+
+For a complete and detailed breakdown of prompts and tool interactions, please refer to the dedicated [AI Usage Report](docs/ai-usage-report.md).
