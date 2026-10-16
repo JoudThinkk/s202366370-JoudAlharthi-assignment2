@@ -1,5 +1,5 @@
 // ==========================================
-ؤ// 1. DYNAMIC CONTENT & LOCALSTORAGE (Theme Toggle)
+// 1. DYNAMIC CONTENT & LOCALSTORAGE (Theme Toggle)
 // ==========================================
 const themeToggleBtn = document.getElementById('theme-toggle');
 
