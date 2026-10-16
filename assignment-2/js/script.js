@@ -25,52 +25,54 @@ themeToggleBtn.addEventListener('click', () => {
     }
 });
 
-
 // ==========================================
-// 2. FORM VALIDATION & USER FEEDBACK (Data Handling)
+// 2. FORM VALIDATION & POPUP TOAST FEEDBACK
 // ==========================================
 const contactForm = document.querySelector('.contact-form');
 
 if (contactForm) {
-    // Create a container for feedback messages dynamically
-    const feedbackMsg = document.createElement('div');
-    feedbackMsg.style.marginTop = '15px';
-    feedbackMsg.style.fontWeight = '600';
-    contactForm.appendChild(feedbackMsg);
+    // Create toast element dynamically and append it to body
+    const toast = document.createElement('div');
+    toast.id = 'toast-notification';
+    document.body.appendChild(toast);
+
+    function showToast(message, isError = false) {
+        toast.textContent = message;
+        toast.className = ''; // Reset classes
+        if (isError) {
+            toast.classList.add('error');
+        }
+        toast.classList.add('show');
+
+        // Hide toast after 4 seconds
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 4000);
+    }
 
     contactForm.addEventListener('submit', (e) => {
-        e.preventDefault(); // Prevent default submission to handle via JS
+        e.preventDefault();
 
         const nameInput = document.getElementById('name').value.trim();
         const emailInput = document.getElementById('email').value.trim();
         const messageInput = document.getElementById('message').value.trim();
 
-        // Simple validation check
+        // Validation check
         if (!nameInput || !emailInput || !messageInput) {
-            feedbackMsg.style.color = '#e74c3c'; // Error red
-            feedbackMsg.textContent = '❌ Error: Please fill in all required fields before submitting.';
+            showToast('❌ Please fill in all required fields.', true);
             return;
         }
 
-        // Email basic format check
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+rit$/; // Just checking standard format
         if (!emailInput.includes('@') || !emailInput.includes('.')) {
-            feedbackMsg.style.color = '#e74c3c';
-            feedbackMsg.textContent = '❌ Error: Please enter a valid email address containing "@" and ".".';
+            showToast('❌ Please enter a valid email address.', true);
             return;
         }
 
-        // Success Feedback
-        feedbackMsg.style.color = '#27ae60'; // Success green
-        feedbackMsg.textContent = '✅ Success! Thank you for your message, ' + nameInput + '.';
+        // Success Toast
+        showToast('✅ Success! Thank you for your message, ' + nameInput + '.');
         
-        // Clear form inputs after successful submission
+        // Clear form
         contactForm.reset();
-
-        // Remove success message after 5 seconds
-        setTimeout(() => {
-            feedbackMsg.textContent = '';
-        }, 5000);
     });
 }
 
