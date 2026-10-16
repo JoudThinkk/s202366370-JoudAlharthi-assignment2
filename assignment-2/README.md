@@ -34,30 +34,13 @@ This repository contains the second iteration of my personal portfolio website, 
 
 ---
 
-## 🛠️ Technologies Used
-- **HTML5:** Utilized semantic elements for clean and accessible page structuring, including:
-  - `<header>` / Navigation structure
-  - `<section>` (for partitioning major content blocks like About, Projects, and Contact)
-  - `<div>` (for flexible layouts, grids, and container wrappers)
-  - `<h2>` and `<h3>` (for hierarchical headings)
-  - `<p>` (for text descriptions and taglines)
-  - `<img>` (for displaying project and profile image assets)
-  - `<form>`, `<label>`, `<input>` (text and email), `<textarea>`, and `<button>` (for the interactive contact section)
-- **CSS3:** Advanced styling utilizing:
-  - **CSS Flexbox** (for the About section alignment and layout responsiveness)
-  - **CSS Grid** (for the structured projects layout)
-  - Media queries and responsive design techniques
-  - Custom CSS classes and state styling for the Dark/Light Mode theme and Toast notifications
-- **JavaScript (ES6+):** Client side programming handling:
-  - DOM manipulation and event listeners
-  - Browser **`localStorage`** API for persistent theme preference storage
-  - Form validation logic and input verification
-  - Dynamic UI generation (floating Toast notification system with custom success/error feedback states)
-  - Smooth entrance animations and page transitions
+## Technologies Used
+- **HTML5:** Semantic layout structuring.
+- **CSS3:** Flexbox, CSS Grid, and custom dark mode styling.
+- **JavaScript (ES6+):** DOM manipulation, `localStorage`, form validation, and dynamic toast notifications.
 
 ---
-
-## 📁 Project Directory Structure
+##  Project Directory Structure
 ```text
 assignment-2/
 ├── README.md
@@ -75,7 +58,7 @@ assignment-2/
     └── technical-documentation.md
 ```
 
-## ⚙️ How to Run Locally
+##  How to Run Locally
 
 To run and test this project locally on your machine, follow these detailed steps:
 
