@@ -50,4 +50,3 @@ assignment-2/
    ```
 ## 4. Responsive Design & Compatibility
    The website is fully optimized for responsive design and compatibility across various environments. Viewport adaptability was thoroughly tested using browser Developer Tools to ensure seamless scaling across mobile devices, tablets, and desktop displays. Additionally, all resources including stylesheets, scripts, and images utilize relative paths pointing directly to their respective directories (`css/`, `js/`, `images/`) to prevent broken links and guarantee smooth cross-environment execution. Furthermore, state synchronization is carefully maintained to ensure that dynamic UI components, such as theme states and feedback notifications, adapt smoothly without causing layout shifts or performance bottlenecks.
-   
