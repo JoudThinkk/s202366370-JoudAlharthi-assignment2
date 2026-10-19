@@ -1,3 +1,4 @@
+// Assisted-by: Gemini
 // ==========================================
 // 1. DYNAMIC CONTENT & LOCALSTORAGE (Theme Toggle)
 // ==========================================
