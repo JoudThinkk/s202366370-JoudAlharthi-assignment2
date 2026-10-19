@@ -96,7 +96,7 @@ To run and test this project locally on your machine, follow these detailed step
 
 ##  AI Usage Summary
 
-During the development of **Assignment 2**, Artificial Intelligence tools (such as Gemini and ChatGPT) were utilized responsibly and transparently as a collaborative assistant to enhance the learning and development process. 
+During the development of **Assignment 2**, Artificial Intelligence tools which was Gemini utilized responsibly and transparently as a collaborative assistant to enhance the learning and development process. 
 
 ### How AI Was Utilized:
 1. **Brainstorming & Logic Design:** 
