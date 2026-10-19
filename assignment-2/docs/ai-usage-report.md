@@ -2,19 +2,28 @@
 
 ## 1. Usage Log
 
-* **Tool:** Gemini
-* **Date:** October 2026
-* **Purpose:** Interactive logic development, feature scaffolding, and troubleshooting
-* **Files Affected:** `js/script.js`, `css/styles.css`, `docs/technical-documentation.md`,`README.md`
-* **What you changed:** Gemini provided initial logic snippets and structural guidance for implementing browser `localStorage` (theme persistence), client-side form validation, and centered toast notifications. I thoroughly reviewed, tested, and manually adapted every piece of code, adjusting CSS positioning, animation scales, and script variables to seamlessly match my personal portfolio design and assignment requirements.
+| ID | Tool (model) | Date | Purpose | Files affected | What you changed and how you verified it |
+|----|--------------|------|---------|----------------|------------------------------------------|
 
-## 2. Signed Declaration
+| C01 | Gemini | 19 October 2026| Theme Toggle & LocalStorage Logic | `js/script.js`, `css/styles.css` | **AI:** Provided the JavaScript logic for browser `localStorage` and theme state. **Personal:** I integrated the script, tested it, and verified theme retention across page reloads in the browser. |
 
-I hereby declare that I understand, have thoroughly reviewed, and can fully explain all the code and documentation submitted in this repository for Assignment 2. All AI tools were used responsibly and transparently as a collaborative assistant, and all generated outputs were manually tested, verified, and adapted to meet the assignment requirements and academic integrity standards.
+| C02 | Gemini | 19 October 2026 | Form Validation & Dynamic Toast System | `js/script.js`, `css/styles.css` | **AI:** Generated the snippet for validating required fields/emails and creating the dynamic toast notification. **Personal:** I integrated the validation function, tested empty/invalid inputs using VS code integred browser, and fine-tuned the centered positioning. |
 
-* **Student Name:** Joud Alharthi
-* **Student ID:** 202366370
-* **Date:** October 19, 2026
+| C03 | Gemini | 19 October 2026| Git Troubleshooting & Submodule Fixes | Terminal / Git Configuration | **AI:** Provided terminal commands (`git rm -r --cached .`) to resolve path conflicts and submodule issues. **Personal:** I executed the commands in VS Code terminal, verified clean repository status, wrote commit messages, and pushed the assignment files to GitHub. |
+
+| A01 | Gemini | 19 October 2026 | Technical Documentation Drafting | `docs/technical-documentation.md` | **AI:** Outlined the technical documentation structure. **Personal:** I authored and customized all the descriptive content to match my Assignment 2 portfolio architecture (HTML5 semantics, CSS Grid/Flexbox, and JS features). |
+
+| A02 | Gemini | 19 October 2026 | AI Usage Report Formatting | `docs/ai-usage-report.md` | **AI:** Formatted the usage table structure according to requirements. **Personal:** I reviewed, and confirmed my personal declaration and student ID. |
+
+| A03 | Gemini | 19 October 2026 | README File Structuring | `README.md` | **AI:** Provided the template and layout structure for the project README file. **Personal:** I customized the repository details, directory overview, and local execution instructions to accurately match my Assignment 2 submission. |
+
+## 2. Declaration
+
+> I declare that this report and the attached evidence document all of my AI use in this assignment, with complete and unedited conversations, and that I understand and can explain all the code I submitted. I understand that undeclared AI use or a false declaration will be treated as plagiarism according to KFUPM regulations.
+
+- **Student Name:** Joud Alharthi
+- **Student ID:** s202366370
+- **Date:** 19 October 2026
 
 
 ## 3. Benefits & Challenges:
