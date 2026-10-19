@@ -1,8 +1,7 @@
 # Technical Documentation - Assignment 2
 
 ## 1. Overview
-
-This technical documentation outlines the architecture, advanced technology stack, data handling, and structural design of the Personal Portfolio Website for **Assignment 2**. Building upon the static foundation of Assignment 1, this iteration introduces client-side interactivity, persistent storage, form validation, and modern user experience (UX) enhancements, all structured cleanly to ensure maintainability and seamless execution without requiring a backend server.
+  This technical documentation outlines the architecture, advanced technology stack, data handling, and structural design of the Personal Portfolio Website for **Assignment 2**. Building upon the static foundation of Assignment 1, this iteration introduces client-side interactivity, persistent storage, form validation, and modern user experience (UX) enhancements, all structured cleanly to ensure maintainability and seamless execution without requiring a backend server.
 
 ## 2. Technology Stack & Implementation
 
@@ -45,8 +44,8 @@ assignment-2/
 │   ├── NET.jpeg
 │   └── seraj.png                 
 └── docs/
-    ├── ai-usage-report.md      # Detailed documentation of AI collaboration and usage
-    └── technical-documentation.md # System architecture and implementation details for Assignment 2
+    ├── ai-usage-report.md      # Detailed documentation of AI collaboration and 
+    └── technical-documentation.md # System architecture and implementation details for Assignmen2
    ```
 ## 4. Responsive Design & Compatibility
    The website is fully optimized for responsive design and compatibility across various environments. Viewport adaptability was thoroughly tested using browser Developer Tools to ensure seamless scaling across mobile devices, tablets, and desktop displays. Additionally, all resources including stylesheets, scripts, and images utilize relative paths pointing directly to their respective directories (`css/`, `js/`, `images/`) to prevent broken links and guarantee smooth cross-environment execution. Furthermore, state synchronization is carefully maintained to ensure that dynamic UI components, such as theme states and feedback notifications, adapt smoothly without causing layout shifts or performance bottlenecks.
