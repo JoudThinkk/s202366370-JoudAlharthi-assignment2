@@ -168,8 +168,9 @@ body.dark-mode .project-card p {
 /* Toast Notification Styles */
 #toast-notification {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
     background-color: #27ae60;
     color: white;
     padding: 15px 25px;
@@ -185,7 +186,7 @@ body.dark-mode .project-card p {
 
 #toast-notification.show {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(-50%, -50%) scale(1);
     pointer-events: auto;
 }
 
